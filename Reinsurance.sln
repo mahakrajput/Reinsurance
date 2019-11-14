@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reinsurance.Main", "Reinsurance.Main\Reinsurance.Main.csproj", "{03DF5B0C-B695-4872-9283-23690F446B30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reinsurance.Evaluation", "Reinsurance.Evaluation\Reinsurance.Evaluation.csproj", "{C2BB0073-360D-4C24-8740-49711132F90C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reinsurance.FileReader", "Reinsurance.FileReader\Reinsurance.FileReader.csproj", "{2A2F6D55-6F58-49BB-917E-38C1D0277000}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reinsurance.Model", "Reinsurance.Model\Reinsurance.Model.csproj", "{1448CB34-7F1A-46B3-9F5D-0592D19E501D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03DF5B0C-B695-4872-9283-23690F446B30}.Debug|x86.ActiveCfg = Debug|x86
+		{03DF5B0C-B695-4872-9283-23690F446B30}.Debug|x86.Build.0 = Debug|x86
+		{03DF5B0C-B695-4872-9283-23690F446B30}.Release|x86.ActiveCfg = Release|x86
+		{03DF5B0C-B695-4872-9283-23690F446B30}.Release|x86.Build.0 = Release|x86
+		{C2BB0073-360D-4C24-8740-49711132F90C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C2BB0073-360D-4C24-8740-49711132F90C}.Debug|x86.Build.0 = Debug|Any CPU
+		{C2BB0073-360D-4C24-8740-49711132F90C}.Release|x86.ActiveCfg = Release|Any CPU
+		{C2BB0073-360D-4C24-8740-49711132F90C}.Release|x86.Build.0 = Release|Any CPU
+		{2A2F6D55-6F58-49BB-917E-38C1D0277000}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2A2F6D55-6F58-49BB-917E-38C1D0277000}.Debug|x86.Build.0 = Debug|Any CPU
+		{2A2F6D55-6F58-49BB-917E-38C1D0277000}.Release|x86.ActiveCfg = Release|Any CPU
+		{2A2F6D55-6F58-49BB-917E-38C1D0277000}.Release|x86.Build.0 = Release|Any CPU
+		{1448CB34-7F1A-46B3-9F5D-0592D19E501D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1448CB34-7F1A-46B3-9F5D-0592D19E501D}.Debug|x86.Build.0 = Debug|Any CPU
+		{1448CB34-7F1A-46B3-9F5D-0592D19E501D}.Release|x86.ActiveCfg = Release|Any CPU
+		{1448CB34-7F1A-46B3-9F5D-0592D19E501D}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
