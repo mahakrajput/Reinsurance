@@ -3,7 +3,7 @@ namespace Reinsurance.Model
 {
     public enum Region
     {
-        California,
+        California = 1,
         Louisiana,
         Florida
     }

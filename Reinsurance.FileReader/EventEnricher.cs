@@ -36,6 +36,7 @@ namespace Reinsurance.FileReader
             return events;
         }
 
+
         private static Event GetEventFromData(int[] data)
         {
             if(data.Length != 4)

@@ -15,6 +15,6 @@ namespace Reinsurance.Model
         public Peril Peril { private set; get; }
         public Region Region { private set; get; }
         public int EventLoss { private set; get; }
-        public int TotalLoss { private set; get; }
+        public int TotalLoss { set; get; }
     }
 }

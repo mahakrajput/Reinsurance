@@ -3,7 +3,7 @@ namespace Reinsurance.Model
 {
     public enum Peril
     {
-        Hurricane,
+        Hurricane = 1,
         Earthquake,
         Flood
     }
