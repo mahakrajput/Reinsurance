@@ -10,7 +10,7 @@ namespace Reinsurance.Main
     {
         public static void Main(string[] args)
         {
-            var events = EventEnricher.GetSortedAndEnrichedEvents(Data.Events);
+            var events = EventEnricher.GetEnrichedEvents(Data.Events);
             var deals = DealLoader.GetDeals();
 
             //print deals
