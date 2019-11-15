@@ -18,5 +18,11 @@ namespace Reinsurance.Model
         public int Limit { private set; get; }
         public List<Peril> Perils;
         public List<Region> Regions;
+
+        public override string ToString()
+        {
+            return string.Format("Deal {0} covers {1} {2}, and is {3}X{4}", DealId, 
+            string.Join(",", Regions), string.Join(",", Perils), Limit, Retention);
+        }
     }
 }

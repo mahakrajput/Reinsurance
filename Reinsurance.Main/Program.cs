@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Reinsurance.FileReader;
 using Reinsurance.Evaluation;
 using System.Collections.Generic;
@@ -13,13 +14,19 @@ namespace Reinsurance.Main
             var events = EventEnricher.GetEnrichedEvents(Data.Events);
             var deals = DealLoader.GetDeals();
 
-            //print deals
-            //print events
+
+            deals.ForEach(d => Console.WriteLine(d));
+            Console.WriteLine();
+            Console.WriteLine();
+            events.ForEach(d => Console.WriteLine(d));
 
             Evaluator.Instance.EvaluateLoss(deals, events);
 
+            Console.WriteLine();
+            Console.WriteLine();
 
-            Console.WriteLine("Hello World!");
+            events.OrderBy(e => e.Id);
+            events.ForEach(o => Console.WriteLine(o.PrintReinsuranceTotalLoss()));
 
             Console.ReadLine();
         }
