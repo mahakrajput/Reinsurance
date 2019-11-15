@@ -7,7 +7,7 @@ namespace Reinsurance.FileReader
     public class EventEnricher
     {
 
-        public static List<Event> GetSortedAndEnrichedEvents(int[][] data)
+        public static List<Event> GetEnrichedEvents(int[][] data)
         {
             if(data.GetLength(0) <= 0)
             {
@@ -25,12 +25,6 @@ namespace Reinsurance.FileReader
                 {
                     events.Add(eventResult);
                 }
-            }
-
-            if (events.Any())
-            {
-                var sortedEvents = events.OrderBy(e => e.Id).ToList();
-                return sortedEvents;
             }
 
             return events;
