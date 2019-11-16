@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BEC06FFA-A904-4A8C-8BF5-1F73C237D7C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Reinsurance.Tests</RootNamespace>
+    <AssemblyName>Reinsurance.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EvaluatorTest.cs" />
+    <Compile Include="EventEnricherTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Reinsurance.FileReader\Reinsurance.FileReader.csproj">
+      <Project>{2A2F6D55-6F58-49BB-917E-38C1D0277000}</Project>
+      <Name>Reinsurance.FileReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reinsurance.Model\Reinsurance.Model.csproj">
+      <Project>{1448CB34-7F1A-46B3-9F5D-0592D19E501D}</Project>
+      <Name>Reinsurance.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reinsurance.Evaluation\Reinsurance.Evaluation.csproj">
+      <Project>{C2BB0073-360D-4C24-8740-49711132F90C}</Project>
+      <Name>Reinsurance.Evaluation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reinsurance.FileReader", "R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reinsurance.Model", "Reinsurance.Model\Reinsurance.Model.csproj", "{1448CB34-7F1A-46B3-9F5D-0592D19E501D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reinsurance.Tests", "Reinsurance.Tests\Reinsurance.Tests.csproj", "{BEC06FFA-A904-4A8C-8BF5-1F73C237D7C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -31,5 +33,9 @@ Global
 		{1448CB34-7F1A-46B3-9F5D-0592D19E501D}.Debug|x86.Build.0 = Debug|Any CPU
 		{1448CB34-7F1A-46B3-9F5D-0592D19E501D}.Release|x86.ActiveCfg = Release|Any CPU
 		{1448CB34-7F1A-46B3-9F5D-0592D19E501D}.Release|x86.Build.0 = Release|Any CPU
+		{BEC06FFA-A904-4A8C-8BF5-1F73C237D7C0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BEC06FFA-A904-4A8C-8BF5-1F73C237D7C0}.Debug|x86.Build.0 = Debug|Any CPU
+		{BEC06FFA-A904-4A8C-8BF5-1F73C237D7C0}.Release|x86.ActiveCfg = Release|Any CPU
+		{BEC06FFA-A904-4A8C-8BF5-1F73C237D7C0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

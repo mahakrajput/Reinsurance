@@ -26,13 +26,13 @@ namespace Reinsurance.Evaluation
 
         public void EvaluateLoss(List<Deal> deals, List<Event> events)
         {
-            if (!deals.Any())
+            if (deals == null || !deals.Any())
             {
                 Console.WriteLine("No deals available to evaluate loss");
                 return;
             }
 
-            if (!events.Any())
+            if (events == null || !events.Any())
             {
                 Console.WriteLine("No events available to evaluate loss");
                 return;
