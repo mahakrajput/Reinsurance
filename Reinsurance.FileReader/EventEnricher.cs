@@ -1,15 +1,24 @@
 ﻿using Reinsurance.Model;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace Reinsurance.FileReader
 {
     public class EventEnricher
     {
+        private static readonly int MaxPerilValue;
+        private static readonly int MaxRegionValue;
+
+        static EventEnricher()
+        {
+            MaxPerilValue = (int)Enum.GetValues(typeof(Peril)).Cast<Peril>().Max();
+            MaxRegionValue = (int)Enum.GetValues(typeof(Region)).Cast<Region>().Max();
+        }
 
         public static List<Event> GetEnrichedEvents(int[][] data)
         {
-            if(data.GetLength(0) <= 0)
+            if (data == null || data.GetLength(0) <= 0)
             {
                 return new List<Event>();
             }
@@ -34,6 +43,11 @@ namespace Reinsurance.FileReader
         private static Event GetEventFromData(int[] data)
         {
             if(data.Length != 4)
+            {
+                return null;
+            }
+
+            if(data[1] > MaxPerilValue || data[2] > MaxRegionValue)
             {
                 return null;
             }
